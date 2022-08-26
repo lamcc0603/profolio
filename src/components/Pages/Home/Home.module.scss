@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 12rem;
+  font-weight: 700;
+  color: #3e503c;
+  text-transform: uppercase;
+}
+
+.btn {
+  &__showmore {
+    text-decoration: none;
+    border: 2px solid #000000;
+    padding: 1rem 3rem;
+    background: #949c81;
+    color: #000;
+    font-size: 1.8rem;
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      text-align: center;
+      padding: 1rem 4rem;
+      background: #ee9c81;
+      color: #fff;
+      border: 2px solid #3e503c;
+    }
+  }
+}

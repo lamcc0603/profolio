@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  padding: 1rem 0.5rem;
+}
+
+.logo {
+  width: 10%;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  &__item {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+}
+.menu {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  &__item {
+    display: block;
+    text-decoration: none;
+    color: black;
+    color: #ee9c81;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
