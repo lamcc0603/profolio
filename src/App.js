@@ -1,16 +1,23 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Layout/Header/Header";
-import Home from "./components/Pages/Home/Home";
-import Product from "./components/Pages/Product/Product";
+import { publicRoutes } from "./routes";
 
 function App() {
   return (
     <>
       <Header />
-
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/product" element={<Product />}></Route>
+        {publicRoutes.map((routee, index) => {
+          const Page = routee.component;
+
+          return (
+            <Route
+              key={index}
+              path={routee.path}
+              element={<>{<Page />}</>}
+            ></Route>
+          );
+        })}
       </Routes>
     </>
   );
